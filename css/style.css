@@ -1,0 +1,113 @@
+body {
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  background-color: #575055;
+}
+h1 {
+  text-align: center;
+  color: rgba(104, 106, 233, 0.862);
+}
+.numbers {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+  background-color: rgba(164, 157, 157, 0.862);
+  padding: 10px;
+  list-style-type: none;
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+}
+.number {
+  display: inline-block;
+  margin: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  width: 25px;
+  border-radius: 100%;
+  padding: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+.selected-number {
+  background-color: rgba(104, 106, 233, 0.862);
+}
+#megasena-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 300px;
+  height: 35px;
+  margin: 8px;
+  padding: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+
+  border: none;
+  border-radius: 5px;
+  line-height: 100%;
+
+  font-weight: 700;
+  background-color: rgba(104, 106, 233, 0.862);
+}
+button:disabled {
+  background-color: #ccc;
+  color: rgb(88, 88, 88);
+}
+button:disabled:hover {
+  cursor: unset;
+  background-color: #ccc;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(0, 102, 255);
+}
+#megasena-saved-games p {
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bold;
+  background-color: rgba(104, 106, 233, 0.862);
+  border: 2px solid rgba(104, 106, 233, 0.862);
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
+}
+#megasena-saved-games ul {
+  width: 300px;
+  margin: 10px auto;
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bold;
+  list-style: none;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+#megasena-saved-games ul li {
+  margin-bottom: 10px;
+  background-color: rgba(104, 106, 233, 0.862);
+}
+@media (max-width: 870px) {
+  #megasena-buttons {
+    flex-wrap: wrap;
+  }
+  button {
+    width: 100px;
+    font-size: 12px;
+  }
+  #megasena-saved-games p {
+    font-size: 16px;
+  }
+  #megasena-saved-games ul {
+    font-size: 16px;
+    width: auto;
+  }
+  .number {
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+    margin: 6px;
+  }
+}
