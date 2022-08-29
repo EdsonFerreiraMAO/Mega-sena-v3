@@ -1,2 +1,2 @@
-# Mega-sena-v3
+# megaSenaV3
 MiniCamp XPE
